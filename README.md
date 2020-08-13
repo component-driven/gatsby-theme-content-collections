@@ -7,7 +7,7 @@ A Gatsby theme for MDX content organized by collections
 Install as a dependency to your Gatsby site
 
 ```
-npm install @component-driven/gatsby-theme-content-collections
+npm install gatsby-theme-content-collections
 ```
 
 add the following to your `gatsby-config.js`:

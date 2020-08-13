@@ -1,5 +1,5 @@
 {
-  "name": "@component-driven/gatsby-theme-content-collections",
+  "name": "gatsby-theme-content-collections",
   "version": "1.0.0",
   "description": "A Gatsby theme for MDX content organized by collections",
   "main": "index.js",
