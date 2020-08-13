@@ -1,0 +1,63 @@
+{
+  "name": "gatsby-theme-content-collections",
+  "version": "0.0.0-development",
+  "description": "A Gatsby theme for MDX content organized by collections",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "patch-package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/react": "^1.5.8",
+    "babel-plugin-emotion": "^10.0.33",
+    "babel-preset-gatsby": "^0.4.7",
+    "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-mdx": "^1.1.4",
+    "gatsby-plugin-open-graph-images": "^0.1.6",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-remark-copy-linked-files": "^2.2.1",
+    "gatsby-remark-smartypants": "^2.2.1",
+    "gatsby-transformer-json": "^2.4.5",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-remark-images": "^3.2.1",
+    "gatsby-source-filesystem": "^2.1.56",
+    "react-helmet": "^5.2.1",
+    "remark-slug": "^6.0.0",
+    "slug": "^3.3.0"
+  },
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "gatsby": "^2.24.10",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "patch-package": "^6.2.2",
+    "prettier": "2.0.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.23.22",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "react",
+    "blog",
+    "content",
+    "collection"
+  ],
+  "author": "Andrey Okonetchnikov <andrey@okonet.ru>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,md}": "prettier --write"
+  }
+}
