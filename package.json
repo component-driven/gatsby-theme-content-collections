@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-theme-content-collections",
-  "version": "1.0.0",
+  "name": "@component-driven/gatsby-theme-content-collections",
+  "version": "0.0.0",
   "description": "A Gatsby theme for MDX content organized by collections",
   "main": "index.js",
   "scripts": {
@@ -61,5 +61,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,json,md}": "prettier --write"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
