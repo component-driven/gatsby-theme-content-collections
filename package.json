@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-content-collections",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Gatsby theme for MDX content organized by collections",
   "repository": {
     "type": "git",
