@@ -86,6 +86,48 @@ type Category implements Node {
 
 You can [customize the schema](https://www.gatsbyjs.com/docs/schema-customization/) in your `gatsby-node` if you want to extend them.
 
+## Rendering
+
+This plugin uses Gatsby shadowing for customization. In order to customize how pages are rendered for each collection, you'd need to override following files:
+
+```
+src
+├── components
+│   ├── CategoryPage.js
+│   ├── OgImage.js
+│   ├── PostPage.js
+│   └── PostsPage.js
+└── templates
+    ├── category.js
+    ├── fragments.js
+    ├── post-og-image.js
+    ├── post.js
+    └── posts.js
+```
+
+For example, if you want different pages to be rendered depending on a collection:
+
+```jsx
+import React from "react"
+import BlogPostPage from "../../components/BlogPostPage"
+import EventPage from "../../components/EventPage"
+
+function PostPage(props) {
+  switch (props.pageContext.collection) {
+    case "posts": {
+      return <BlogPostPage {...props} />
+    }
+    case "events": {
+      return <EventPage {...props} />
+    }
+    default:
+      return <h1>No page for this collection is defined</h1>
+  }
+}
+
+export default PostPage
+```
+
 ### Query all posts by a category
 
 ```graphql
