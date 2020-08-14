@@ -67,4 +67,4 @@ type Post implements Node {
 }
 ```
 
-Use schema overwrites in your `gatsby-node` if you want to extend them.
+You can [customize the schema](https://www.gatsbyjs.com/docs/schema-customization/) in your `gatsby-node` if you want to extend them.
