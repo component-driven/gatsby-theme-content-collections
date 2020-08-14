@@ -80,7 +80,6 @@ type Category implements Node {
   slug: String!
   posts: [Post]!
   postCount: Int!
-  isTag: Boolean
 }
 ```
 

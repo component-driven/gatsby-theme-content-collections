@@ -5,7 +5,6 @@ export const query = graphql`
     categories {
       id
       slug
-      isTag
     }
   }
   fragment PostMeta on Post {
@@ -32,7 +31,5 @@ export const query = graphql`
         }
       }
     }
-    coverImageAuthor
-    coverImageLink
   }
 `

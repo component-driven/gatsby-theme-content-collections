@@ -51,7 +51,6 @@ exports.sourceNodes = ({ actions, schema }) => {
       slug: String!
       posts: [Post]!
       postCount: Int!
-      isTag: Boolean
     }
     
     type Post implements Node {
