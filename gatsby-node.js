@@ -4,7 +4,6 @@ const mkdirp = require("mkdirp")
 const Debug = require("debug")
 const slug = require("slug")
 const pkg = require("./package.json")
-const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 const { createFilePath } = require("gatsby-source-filesystem")
 
 const debug = Debug(pkg.name)
@@ -233,20 +232,12 @@ exports.createPages = async ({ graphql, actions, reporter }, pluginOptions) => {
 
   // Create a page for each Post
   allPost.nodes.forEach((post, index) => {
-    const ogImage = createOpenGraphImage(createPage, {
-      path: `/og-images/${post.id}.png`,
-      component: path.resolve(`${__dirname}/src/templates/post-og-image.js`),
-      context: {
-        ...post,
-      },
-    })
     createPage({
       path: post.slug,
       component: path.resolve(`${__dirname}/src/templates/post.js`),
       context: {
         id: post.id,
         collection: post.collection,
-        ogImage,
       },
     })
   })
