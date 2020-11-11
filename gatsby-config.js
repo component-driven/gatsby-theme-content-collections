@@ -20,7 +20,6 @@ module.exports = (options) => {
         },
       },
       "gatsby-plugin-react-helmet",
-      "gatsby-plugin-open-graph-images",
       "gatsby-transformer-sharp",
       "gatsby-plugin-sharp",
       {

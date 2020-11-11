@@ -93,13 +93,11 @@ This plugin uses Gatsby shadowing for customization. In order to customize how p
 src
 ├── components
 │   ├── CategoryPage.js
-│   ├── OgImage.js
 │   ├── PostPage.js
 │   └── PostsPage.js
 └── templates
     ├── category.js
     ├── fragments.js
-    ├── post-og-image.js
     ├── post.js
     └── posts.js
 ```
